@@ -1,0 +1,78 @@
+.cars-section {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #111;
+  font-family: 'Cardo';
+  color: white;
+}
+
+.cars-container {
+    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.cars-section h1{
+    font-size:70px;
+    text-align: left;
+    padding :60px 50px;
+}
+
+.car-card {
+  position: relative;
+  width: 100%;
+  height: 500px; /* adjust as needed */
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+.car-card:hover{
+    transform: scale(1.03);
+}
+
+.car-card h2 {
+  position: absolute;    /* position above images */
+  bottom: 10px;          /* place near bottom of card */
+  left: 10px;
+  z-index: 2;            /* above GIF and static image */
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 5px black;
+  font-family: 'Cardo';
+  font-size:35px;
+}
+/* Static image visible by default */
+.car-image {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* GIF hidden initially */
+.car-gif {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+
+}
+
+/* Play GIF on hover */
+.car-card:hover .car-image {
+  display: none;
+
+}
+
+.car-card:hover .car-gif {
+  display: block;
+}

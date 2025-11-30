@@ -1,0 +1,61 @@
+/* Home Section Container */
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  background-attachment: fixed;
+  top:0;
+  
+  overflow: hidden;   /* hides overflow of video */
+}
+
+/* Background Video */
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* video fills container */
+  z-index: 0;
+  pointer-events: none; /* allow clicks on buttons */
+}
+
+/* Content overlay */
+.home-content {
+  position: relative;  /* relative so it doesn’t block scrolling */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  top:90px;
+  right:600px;
+  padding: 20px;
+  margin-top: 40vh;    /* centers content vertically on initial viewport */
+}
+
+/* Headline */
+.home-content h1 {
+  font-size: 6rem;
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+.home-content button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-content button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
