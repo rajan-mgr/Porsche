@@ -56,6 +56,7 @@ function Footer() {
           <li>Lawyer's Corner</li>
         </ul>
       </div>
+      <div></div>
 
     </div>
   );
