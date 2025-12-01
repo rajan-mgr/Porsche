@@ -53,6 +53,7 @@ export default function Car() {
             <img src={car.image} alt={car.name} className="car-image" />
             <img src={car.gif} alt={car.name} className="car-gif" />
             <h2>{car.name}</h2>
+            <button className="btn-explore">Explore More</button>
           </div>
         ))}
       </div>

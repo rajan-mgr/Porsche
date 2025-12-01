@@ -66,13 +66,24 @@
   display: none;
 
 }
-
 /* Play GIF on hover */
 .car-card:hover .car-image {
   display: none;
-
 }
-
 .car-card:hover .car-gif {
   display: block;
+}
+.btn-explore{
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  background: transparent;
+  border:1px solid white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
 }
